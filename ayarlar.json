@@ -1,0 +1,14 @@
+{ 
+    "token": "MTI0OTg0ODYzMjg2MjA0ODI4Ng.GETrni._nHQdABQNVfpuA7vj73E4acPp3zef7Ax9bqU3w",
+    "clientId": "1249848632862048286",
+    "botAdi": "TürkBOT",
+    "sahipId": "",
+    "destekSunucusu": "https://discord.gg/wnerscode",
+    "webSite": "https://wners.dev/",
+    "botDavet": "https://discord.com/oauth2/authorize?client_id=1249848632862048286&scope=bot+applications.commands&permissions=8",
+    "aktivite": "discord.gg/wnerscode",
+    "aktifChannel": "",
+    "komutlogkanal": "",
+    "eklendiChannel": "",
+    "bakim": false
+}

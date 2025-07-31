@@ -4,7 +4,7 @@ wnerscode tarafından geliştirilen aşırı gelişmiş altyapıya hoşgeldiniz.
 
 # kurulum
 
-ilk başta [ayarlar.json](https://github.com/wnersdev/aşırı-gelişmiş-genel-bot/ayarlar.json) bütün hepsini doldurduktan sonra
+ilk başta [ayarlar.json](https://github.com/wnersdev102/asiri-gelismis-genel-bot/blob/main/ayarlar.json) bütün hepsini doldurduktan sonra
 ```bash
 npm i
 ```

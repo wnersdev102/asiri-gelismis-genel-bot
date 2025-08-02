@@ -29,13 +29,23 @@ module.exports = {
     }
 
     if (girisCikisData?.girisKanal) {
-      const kanal = member.guild.channels.cache.get(girisCikisData.girisKanal);
-      if (kanal) {
-        const total = member.guild.memberCount;
-        kanal.send(`🎉 ${member.user.tag} aramıza katıldı! Şu anda toplam **${total}** üyeyiz.`);
-      }
-    }
+  const kanal = member.guild.channels.cache.get(girisCikisData.girisKanal);
+  if (kanal) {
+    const total = member.guild.memberCount;
 
+    const welcomeEmbed = new EmbedBuilder()
+      .setColor(0x00FF00)
+      .setTitle('🎉 Yeni Üye!')
+      .setDescription(`${member.user.tag} aramıza katıldı!`)
+      .addFields(
+        { name: 'Toplam Üye Sayısı', value: `**${total}**`, inline: false }
+      )
+      .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
+      .setTimestamp();
+
+    kanal.send({ embeds: [welcomeEmbed] });
+  }
+    }
 
     if (etiketKanalId) {
       const kanal = member.guild.channels.cache.get(etiketKanalId);
